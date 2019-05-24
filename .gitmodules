@@ -1,0 +1,3 @@
+[submodule "BriocheEngine/vendor/spdlog"]
+	path = BriocheEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
