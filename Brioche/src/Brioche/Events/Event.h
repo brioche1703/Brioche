@@ -2,9 +2,6 @@
 
 #include "Brioche/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Brioche {
 
 	// Events are currently blocking, meaning when an event occurs it

@@ -10,6 +10,12 @@ workspace "Brioche"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Brioche/vendor/GLFW/include"
+
+include "Brioche/vendor/GLFW"
+
 project "Brioche"
 	location "Brioche"
 	kind "SharedLib"
@@ -17,6 +23,9 @@ project "Brioche"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "brpch.h"
+	pchsource "Brioche/src/brpch.cpp"
 
 	files
 	{
@@ -27,7 +36,14 @@ project "Brioche"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

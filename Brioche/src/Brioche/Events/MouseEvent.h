@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Brioche {
 
 	class BRIOCHE_API MouseMovedEvent : public Event

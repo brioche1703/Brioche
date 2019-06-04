@@ -1,3 +1,6 @@
 [submodule "Brioche/vendor/spdlog"]
 	path = Brioche/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Brioche/vendor/GLFW"]
+	path = Brioche/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

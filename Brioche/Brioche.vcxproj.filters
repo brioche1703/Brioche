@@ -7,6 +7,12 @@
     <Filter Include="Brioche\Events">
       <UniqueIdentifier>{85A55D76-7173-517C-5A07-C2A246742DE1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{b0d859c0-5d08-4343-ace4-b769ad17dc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{3116f874-2e1a-472f-9e74-abee8efbc425}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Brioche.h" />
@@ -34,13 +40,24 @@
     <ClInclude Include="src\Brioche\Log.h">
       <Filter>Brioche</Filter>
     </ClInclude>
+    <ClInclude Include="src\brpch.h" />
+    <ClInclude Include="src\Brioche\Window.h">
+      <Filter>Brioche</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Brioche\Application.cpp">
-      <Filter>Brioche</Filter>
-    </ClCompile>
     <ClCompile Include="src\Brioche\Log.cpp">
       <Filter>Brioche</Filter>
+    </ClCompile>
+    <ClCompile Include="src\brpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Brioche\Application.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

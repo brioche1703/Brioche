@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Brioche {
 
 	class BRIOCHE_API KeyEvent : public Event
