@@ -4,6 +4,9 @@
     <Filter Include="Brioche">
       <UniqueIdentifier>{C1FCD9ED-2DDC-5889-36F4-E35FA252BFEA}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Brioche\Events">
+      <UniqueIdentifier>{85A55D76-7173-517C-5A07-C2A246742DE1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Brioche.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Brioche\EntryPoint.h">
       <Filter>Brioche</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brioche\Events\ApplicationEvent.h">
+      <Filter>Brioche\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brioche\Events\Event.h">
+      <Filter>Brioche\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brioche\Events\KeyEvent.h">
+      <Filter>Brioche\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brioche\Events\MouseEvent.h">
+      <Filter>Brioche\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Brioche\Log.h">
       <Filter>Brioche</Filter>
