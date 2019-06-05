@@ -7,8 +7,14 @@
     <Filter Include="Brioche\Events">
       <UniqueIdentifier>{85A55D76-7173-517C-5A07-C2A246742DE1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Brioche\ImGui">
+      <UniqueIdentifier>{AB3E17FC-17FF-9232-E039-DCAF4CB9D70E}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\Brioche\Events\MouseEvent.h">
       <Filter>Brioche\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brioche\ImGui\ImGuiLayer.h">
+      <Filter>Brioche\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Brioche\Layer.h">
       <Filter>Brioche</Filter>
     </ClInclude>
@@ -49,6 +58,9 @@
     <ClInclude Include="src\Brioche\Window.h">
       <Filter>Brioche</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
@@ -58,6 +70,9 @@
     <ClCompile Include="src\Brioche\Application.cpp">
       <Filter>Brioche</Filter>
     </ClCompile>
+    <ClCompile Include="src\Brioche\ImGui\ImGuiLayer.cpp">
+      <Filter>Brioche\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Brioche\Layer.cpp">
       <Filter>Brioche</Filter>
     </ClCompile>
@@ -66,6 +81,9 @@
     </ClCompile>
     <ClCompile Include="src\Brioche\Log.cpp">
       <Filter>Brioche</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
