@@ -40,7 +40,7 @@ namespace Brioche {
 	class BRIOCHE_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
-		KeyReleaseEvent(int keycode)
+		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode) {}
 
 

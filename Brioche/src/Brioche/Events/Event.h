@@ -1,5 +1,6 @@
 #pragma once
 
+#include "brpch.h"
 #include "Brioche/Core.h"
 
 namespace Brioche {
@@ -15,7 +16,7 @@ namespace Brioche {
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
 		AppTick, AppUpdate, AppRender,
 		KeyPressed, KeyReleased,
-		MouseButtonPressed, MouseButtonRelease, MouseMoved, MouseScrolled
+		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
 	enum EventCategory
