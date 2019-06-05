@@ -8,10 +8,10 @@
       <UniqueIdentifier>{85A55D76-7173-517C-5A07-C2A246742DE1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform">
-      <UniqueIdentifier>{b0d859c0-5d08-4343-ace4-b769ad17dc54}</UniqueIdentifier>
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
-      <UniqueIdentifier>{3116f874-2e1a-472f-9e74-abee8efbc425}</UniqueIdentifier>
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -37,27 +37,39 @@
     <ClInclude Include="src\Brioche\Events\MouseEvent.h">
       <Filter>Brioche\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brioche\Layer.h">
+      <Filter>Brioche</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brioche\LayerStack.h">
+      <Filter>Brioche</Filter>
+    </ClInclude>
     <ClInclude Include="src\Brioche\Log.h">
       <Filter>Brioche</Filter>
     </ClInclude>
-    <ClInclude Include="src\brpch.h" />
     <ClInclude Include="src\Brioche\Window.h">
       <Filter>Brioche</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\brpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Brioche\Application.cpp">
+      <Filter>Brioche</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Brioche\Layer.cpp">
+      <Filter>Brioche</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Brioche\LayerStack.cpp">
+      <Filter>Brioche</Filter>
+    </ClCompile>
     <ClCompile Include="src\Brioche\Log.cpp">
       <Filter>Brioche</Filter>
     </ClCompile>
-    <ClCompile Include="src\brpch.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\Brioche\Application.cpp">
-      <Filter>Platform\Windows</Filter>
-    </ClCompile>
+    <ClCompile Include="src\brpch.cpp" />
   </ItemGroup>
 </Project>

@@ -3,6 +3,7 @@
 // For use by Brioche applications
 
 #include "Brioche/Application.h"
+#include "Brioche/Layer.h"
 #include "Brioche/Log.h"
 
 // ---Entry Point------------------------
