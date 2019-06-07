@@ -111,6 +111,7 @@ project "Sandbox"
 	{
 		"Brioche/vendor/spdlog/include",
 		"Brioche/src",
+		"Brioche/vendor",
 		"%{IncludeDir.glm}"
 	}
 

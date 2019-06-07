@@ -3,11 +3,11 @@
 #include "Core.h"
 
 #include "Window.h"
-
 #include "Brioche/LayerStack.h"
 #include "Brioche/Events/Event.h"
 #include "Brioche/Events/ApplicationEvent.h"
 
+#include "Brioche/ImGui/ImGuiLayer.h"
 
 namespace Brioche {
 
@@ -31,6 +31,7 @@ namespace Brioche {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

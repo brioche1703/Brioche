@@ -165,7 +165,6 @@
     <ClInclude Include="src\Brioche\Log.h" />
     <ClInclude Include="src\Brioche\MouseButtonCodes.h" />
     <ClInclude Include="src\Brioche\Window.h" />
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\brpch.h" />
@@ -536,11 +535,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brioche\Application.cpp" />
+    <ClCompile Include="src\Brioche\ImGui\ImGuiBuild.cpp" />
     <ClCompile Include="src\Brioche\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Brioche\Layer.cpp" />
     <ClCompile Include="src\Brioche\LayerStack.cpp" />
     <ClCompile Include="src\Brioche\Log.cpp" />
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\brpch.cpp">
