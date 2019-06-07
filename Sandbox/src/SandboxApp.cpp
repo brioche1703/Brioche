@@ -23,9 +23,6 @@ public:
 		ImGui::Begin("Test");
 		ImGui::Text("Hello World!");
 		ImGui::End();
-		ImGui::Begin("LOLLL");
-		ImGui::Text("Hello LOLLL!");
-		ImGui::End();
 	}
 
 	void OnEvent(Brioche::Event& event) override

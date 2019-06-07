@@ -1,11 +1,11 @@
 #include "brpch.h"
 #include "WindowsWindow.h"
 
-#include <Brioche/Events/ApplicationEvent.h>
-#include <Brioche/Events/MouseEvent.h>
-#include <Brioche/Events/KeyEvent.h>
+#include "Brioche/Events/ApplicationEvent.h"
+#include "Brioche/Events/MouseEvent.h"
+#include "Brioche/Events/KeyEvent.h"
 
-#include <glad/glad.h>
+#include "Platform/OpenGL/OpenGLContext.h"
 
 namespace Brioche {
 
@@ -37,6 +37,7 @@ namespace Brioche {
 		m_Data.Height = props.Height;
 
 		BR_CORE_INFO("Creating window {0} ({1}, {2})", props.Title, props.Width, props.Height);
+		
 
 		if (!s_GLFWInitialized)
 		{
@@ -48,9 +49,9 @@ namespace Brioche {
 		}
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
-		glfwMakeContextCurrent(m_Window);
-		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-		BR_CORE_ASSERT(status, "Failed to initialize Glad!");
+		m_Context = new OpenGLContext(m_Window);
+		m_Context->Init();
+		// ^
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 
@@ -154,7 +155,9 @@ namespace Brioche {
 	void WindowsWindow::OnUpdate()
 	{
 		glfwPollEvents();
-		glfwSwapBuffers(m_Window);
+
+		m_Context->SwapBuffers();
+
 	}
 
 	void WindowsWindow::SetVSync(bool enabled)

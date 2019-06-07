@@ -1,8 +1,10 @@
 #pragma once
 
 #include "Brioche/Window.h"
+#include "Brioche/Renderer/GraphicsContext.h"
 
 #include <GLFW/glfw3.h>
+
 
 namespace Brioche {
 
@@ -29,6 +31,7 @@ namespace Brioche {
 		virtual void ShutDown();
 	private:
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 
 		struct WindowData
 		{
@@ -42,3 +45,4 @@ namespace Brioche {
 		WindowData m_Data;
 	};
 }
+
