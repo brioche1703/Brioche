@@ -16,6 +16,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Brioche/vendor/GLFW/include"
 IncludeDir["Glad"] = "Brioche/vendor/Glad/include"
 IncludeDir["ImGui"] = "Brioche/vendor/imgui"
+IncludeDir["glm"] = "Brioche/vendor/glm"
 
 include "Brioche/vendor/GLFW"
 include "Brioche/vendor/Glad"
@@ -36,7 +37,9 @@ project "Brioche"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs
@@ -45,7 +48,8 @@ project "Brioche"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -100,13 +104,14 @@ project "Sandbox"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
 	}
 
 	includedirs
 	{
 		"Brioche/vendor/spdlog/include",
-		"Brioche/src"
+		"Brioche/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links

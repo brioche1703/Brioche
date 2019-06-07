@@ -7,3 +7,6 @@
 [submodule "Brioche/vendor/imgui"]
 	path = Brioche/vendor/imgui
 	url = https://github.com/TheCherno/imgui
+[submodule "Brioche/vendor/glm"]
+	path = Brioche/vendor/glm
+	url = https://github.com/g-truc/glm
