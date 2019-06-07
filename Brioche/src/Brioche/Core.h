@@ -10,6 +10,10 @@
 	#error Brioche only support Windows!
 #endif
 
+#ifdef BR_DEBUG
+	#define BR_ENABLE_ASSERTS
+#endif
+
 #ifdef BR_ENABLE_ASSERTS
 	#define BR_ASSERT(x, ...) {if (!(x)) { BR_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
 	#define BR_CORE_ASSERT(x, ...) {if (!(x)) { BR_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }

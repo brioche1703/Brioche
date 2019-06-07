@@ -10,12 +10,15 @@ public:
 
 	void OnUpdate() override
 	{
-		BR_INFO("ExampleLayer::Update");
+		//BR_INFO("ExampleLayer::Update");
+
+		if (Brioche::Input::IsKeyPressed(BR_KEY_TAB))
+			BR_TRACE("Tab has been pressed!");
 	}
 
 	void OnEvent(Brioche::Event& event) override
 	{
-		BR_TRACE("{0}", event);
+		//BR_TRACE("{0}", event);
 	}
 };
 
