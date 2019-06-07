@@ -1,8 +1,9 @@
 #pragma once
 
+#include "Window.h"
+
 #include "Core.h"
 
-#include "Window.h"
 #include "Brioche/LayerStack.h"
 #include "Brioche/Events/Event.h"
 #include "Brioche/Events/ApplicationEvent.h"

@@ -1,11 +1,16 @@
 #pragma once
 
 #ifdef BR_PLATFORM_WINDOWS
+#if BR_DYNAMIC_LINK
 	#ifdef BR_BUILD_DLL
 		#define BRIOCHE_API __declspec(dllexport)
 	#else
 		#define BRIOCHE_API __declspec(dllimport)
 	#endif
+#else
+	#define BRIOCHE_API
+#endif
+
 #else
 	#error Brioche only support Windows!
 #endif

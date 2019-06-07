@@ -60,7 +60,7 @@ namespace Brioche {
 		MouseButtonEvent(int button)
 			: m_Button(button) {}
 
-		float m_Button;
+		int m_Button;
 	};
 
 	class BRIOCHE_API MouseButtonPressedEvent : public MouseButtonEvent

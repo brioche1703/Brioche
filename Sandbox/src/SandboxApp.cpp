@@ -18,10 +18,13 @@ public:
 			BR_TRACE("Tab has been pressed!");
 	}
 
-	void OnImGuiRender() override
+	virtual void OnImGuiRender() override
 	{
 		ImGui::Begin("Test");
 		ImGui::Text("Hello World!");
+		ImGui::End();
+		ImGui::Begin("LOLLL");
+		ImGui::Text("Hello LOLLL!");
 		ImGui::End();
 	}
 

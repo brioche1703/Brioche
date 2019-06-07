@@ -1,5 +1,10 @@
 #pragma once
 
+
+#ifndef BR_PLATFORM_WINDOWS
+	#include <Windows.h>
+#endif // !BR_PLATFORM_WINDOWS
+
 #include <iostream>
 #include <memory>
 #include <utility>
@@ -14,7 +19,4 @@
 
 #include "Brioche/Log.h"
 
-#ifndef BR_PLATFORM_WINDOWS
-	#include <Windows.h>
-#endif // !BR_PLATFORM_WINDOWS
 
