@@ -1193,6 +1193,10 @@
     </ClInclude>
     <ClInclude Include="src\Brioche\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\Brioche\Renderer\Shader.h" />
+    <ClInclude Include="src\Brioche\Renderer\Buffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\Brioche\Renderer\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brioche\Application.cpp">
@@ -1223,5 +1227,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\Brioche\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Brioche\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\Brioche\Renderer\Renderer.cpp" />
   </ItemGroup>
 </Project>
