@@ -1218,6 +1218,7 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brioche\Raytracer\Raytracer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brioche\Application.cpp">
@@ -1265,5 +1266,6 @@
     <ClCompile Include="src\brpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Brioche\Raytracer\Raytracer.cpp" />
   </ItemGroup>
 </Project>

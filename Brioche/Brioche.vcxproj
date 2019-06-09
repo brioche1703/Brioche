@@ -155,6 +155,7 @@
     <ClInclude Include="src\Brioche\LayerStack.h" />
     <ClInclude Include="src\Brioche\Log.h" />
     <ClInclude Include="src\Brioche\MouseButtonCodes.h" />
+    <ClInclude Include="src\Brioche\Raytracer\Raytracer.h" />
     <ClInclude Include="src\Brioche\Renderer\Buffer.h" />
     <ClInclude Include="src\Brioche\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Brioche\Renderer\Renderer.h" />
@@ -538,6 +539,7 @@
     <ClCompile Include="src\Brioche\Layer.cpp" />
     <ClCompile Include="src\Brioche\LayerStack.cpp" />
     <ClCompile Include="src\Brioche\Log.cpp" />
+    <ClCompile Include="src\Brioche\Raytracer\Raytracer.cpp" />
     <ClCompile Include="src\Brioche\Renderer\Buffer.cpp" />
     <ClCompile Include="src\Brioche\Renderer\Renderer.cpp" />
     <ClCompile Include="src\Brioche\Renderer\Shader.cpp" />
