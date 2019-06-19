@@ -1218,7 +1218,12 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="src\Brioche\Raytracer\Raytracer.h" />
+=======
+    <ClInclude Include="src\Brioche\Renderer\VertexArray.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
+>>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brioche\Application.cpp">
@@ -1266,6 +1271,11 @@
     <ClCompile Include="src\brpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="src\Brioche\Raytracer\Raytracer.cpp" />
+=======
+    <ClCompile Include="src\Brioche\Renderer\VertexArray.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
+>>>>>>> master
   </ItemGroup>
 </Project>
